@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Hearts Orphanage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section { display: none; }
+        section.active { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Little Hearts Orphanage</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('children')">Our Children</a></li>
+                <li><a href="#" onclick="showPage('donate')">Donate Now</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+    <main id="content">
+        <section id="home" class="active" style="padding: 2rem; font-family: Arial, sans-serif; text-align: center;">
+            <h2 style="color: #ff6600; font-size: 2rem; margin-bottom: 1rem;">Welcome to Little Hearts Orphanage ❤️</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #333;">
+                At Little Hearts Orphanage, we believe every child deserves love, care, and the chance to dream big. 
+                Our mission is to provide a safe, nurturing environment where children can grow, learn, and thrive. 
+                With the support of kind-hearted people like you, we can make a difference in their lives every single day.
+            </p>
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #444;">🌟 Our Mission</h3>
+                <p style="color: #555; max-width: 700px; margin: 0 auto;">
+                    To give every child the opportunity to live a happy and meaningful life by providing shelter, 
+                    education, healthcare, and emotional support.
+                </p>
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #444;">🤝 How You Can Help</h3>
+                <p style="color: #555; max-width: 700px; margin: 0 auto;">
+                    Your contributions help us provide food, clothes, school supplies, and create memorable 
+                    moments for our children. Every small donation counts — together, we can build a brighter future.
+                </p>
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #444;">📢 Get Involved</h3>
+                <p style="color: #555; max-width: 700px; margin: 0 auto;">
+                    Join us as a volunteer, sponsor a child, or simply spread the word about our cause. 
+                    Your involvement changes lives.
+                </p>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#" onclick="showPage('donate')" style="background-color: #ff6600; color: white; padding: 10px 20px; 
+                   text-decoration: none; border-radius: 5px; margin: 5px; display: inline-block;">
+                    Donate Now
+                </a>
+                <a href="#" onclick="showPage('children')" style="background-color: #4CAF50; color: white; 
+                   padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px; display: inline-block;">
+                    Meet Our Children
+                </a>
+                <a href="#" style="background-color: #2196F3; color: white; padding: 10px 20px; 
+                   text-decoration: none; border-radius: 5px; margin: 5px; display: inline-block;">
+                    Become a Volunteer
+                </a>
+            </div>
+        </section>
+
+        <section id="about" style="padding: 2rem; font-family: Arial, sans-serif; text-align: center;">
+            <h2 style="color: #ff6600; font-size: 2rem; margin-bottom: 1rem;">About Little Hearts Orphanage</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #333;">
+                Little Hearts Orphanage was founded with the vision of providing a loving and supportive home 
+                for children who have lost their families or come from challenging backgrounds. 
+                We work tirelessly to ensure that every child receives the care, education, and 
+                emotional support they need to grow into confident and capable individuals.
+            </p>
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #444;">🏠 Our Story</h3>
+                <p style="color: #555; max-width: 700px; margin: 0 auto;">
+                    Starting with just a small house and a handful of volunteers, 
+                    our orphanage has grown into a vibrant community where children 
+                    can dream, learn, and play without fear or hardship.
+                </p>
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #444;">💡 Our Values</h3>
+                <ul style="list-style: none; padding: 0; color: #555; max-width: 700px; margin: 0 auto;">
+                    <li>❤️ Compassion and kindness for every child</li>
+                    <li>📚 Education as the foundation for a better future</li>
+                    <li>🤝 Community support and volunteer engagement</li>
+                    <li>🌱 Growth and development in a safe environment</li>
+                </ul>
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #444;">👥 Meet Our Team</h3>
+                <p style="color: #555; max-width: 700px; margin: 0 auto;">
+                    Our dedicated team includes caretakers, teachers, counselors, 
+                    and volunteers who work around the clock to ensure our children 
+                    have everything they need to succeed.
+                </p>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#" style="background-color: #ff6600; color: white; padding: 10px 20px; 
+                   text-decoration: none; border-radius: 5px; margin: 5px; display: inline-block;">
+                    Support Our Work
+                </a>
+                <a href="#" style="background-color: #4CAF50; color: white; 
+                   padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px; display: inline-block;">
+                    Become a Volunteer
+                </a>
+            </div>
+        </section>
+
+        <section id="children">
+            <h2>Our Children</h2>
+            <p>Meet some of the lovely children we care for.</p>
+            <div class="children-grid">
+                <div class="child-card">
+                    <img src="https://images.pexels.com/photos/2113709/pexels-photo-2113709.jpeg" alt="Child 1">
+                    <h3>Aarav</h3>
+                    <p>Age: 5 Years | Loves drawing and dancing.</p>
+                </div>
+                <div class="child-card">
+                    <img src="https://c8.alamy.com/comp/BCEN05/children-playing-with-tyres-on-streets-of-ugandan-slum-BCEN05.jpg" alt="Child 2">
+                    <h3>Nobita Nobi and Sasuke Uchiha</h3>
+                    <p>Age: 8 Years | Enjoys reading stories.</p>
+                </div>
+                <div class="child-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4BxskonrhZB4KCT30vduBF1YF_N3-YO_KHA&s" alt="Child 3">
+                    <h3>Rahul</h3>
+                    <p>Age: 6 Months | Dreams of becoming a doctor.</p>
+                </div>
+                <div class="child-card">
+                    <img src="https://img.freepik.com/premium-photo/portrait-happy-smiling-boy-with-autism-disease-light-gray-background-looking-camera_464863-37.jpg" alt="Child 4">
+                    <h3>Abhishek</h3>
+                    <p>Age: 9 Years | Loves singing and coloring.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate">
+            <h2>Donate Now</h2>
+            <form>
+                <label>Name:</label><br>
+                <input type="text" name="name" required="enter name is mandatory"><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" required="enter email is mandatory"><br>
+                <label>Amount:</label><br>
+                <input type="number" name="amount" required><br>
+                <label>Message:</label><br>
+                <textarea name="message"></textarea><br>
+                <button type="button" onclick="window.location.href='payment.html'">Proceed to Payment</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@littlehearts.org</p>
+            <p>Phone: +91-1234567890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Little Hearts Orphanage | Made with ❤️</p>
+    </footer>
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('main section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

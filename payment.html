@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Choose Payment Method</h2>
+        <p>Donation from: <strong id="donorName"></strong></p>
+        <p>Amount: ₹<strong id="donationAmount"></strong></p>
+        <h3>UPI</h3>
+        <input type="text" placeholder="Enter UPI ID">
+        <p>Or Scan QR:</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay" alt="QR Code">
+        <h3>Credit/Debit Card</h3>
+        <input type="text" placeholder="Card Number">
+        <input type="text" placeholder="Expiry Date">
+        <input type="text" placeholder="CVV">
+        <br><br>
+        <button>Proceed to Pay</button>
+    </main>
+    <script>
+        document.getElementById("donorName").innerText = localStorage.getItem("donorName");
+        document.getElementById("donationAmount").innerText = localStorage.getItem("donationAmount");
+    </script>
+</body>
+</html>
